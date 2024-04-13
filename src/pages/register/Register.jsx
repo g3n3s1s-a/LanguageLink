@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 import { createUser } from "../login/loginfunctions";
 import Login from "../login/Login";
 import Home from "../home/Home";
-import { useNavigate } from 'react-router-dom';
-
 
 export default function Register() {
+
+
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
   const [age, setAge] = useState('');
@@ -18,13 +18,11 @@ export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordAgain, setPasswordAgain] = useState('');
-  const [error, setError] = useState('');
-  const navigate = useNavigate(); 
 
   const handleLogin = () => {
-    console.log("switching to login");
-    navigate('/');
-  };
+    console.log("switching to login")
+    return <Link> to="/login" </Link>;
+  }
 
   const handleSignUp = async () => {
     // Perform validation or submit the form data
@@ -34,28 +32,25 @@ export default function Register() {
     }
 
     const formData = {
-      'username': username,
-      'password': password,
-      'email': email,
-      'language_learning': languageToLearn,
-      'language_teaching': languageSpoken,
-      'name': name,
-      'last_name': lastName,
-      'age': age
+      name: name,
+      age: age,
+      language_learn: languageToLearn,
+      language_teach: languageSpoken,
+      username: username,
+      email: email,
+      password: password,
+      passwordAgain: passwordAgain
     };
 
-    try {
-      const response = await createUser(formData);
-      console.log('User created successfully:', response);
-      navigate('/home');
-    } catch (error) {
-      console.error('Error creating user:', error);
-      setError('Failed to create user. Please try again.');
-    }
+    console.log('Name:', name);
+    console.log('Age:', age);
+    console.log('Language to Learn:', languageToLearn);
+    console.log('Language Spoken:', languageSpoken);
+    console.log('Username:', username);
+    console.log('Email:', email);
+    console.log('Password:', password);
+    console.log('Password Again:', passwordAgain);
   };
-
-
-
 
   return (
     <div className="login">
