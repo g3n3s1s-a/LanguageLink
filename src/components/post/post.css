@@ -83,7 +83,7 @@
   /* Styles for the send friend request button */
   font-family: 'roboto', sans-serif;
   font-size: 14px;
-  background-color: #465892;
+  background-color: #cc9a37;
   color: white;
   border: 0; /* Remove border */
   border-radius: 20px; /* Adjust the value to change the roundness */
@@ -99,7 +99,7 @@
   /* Styles for the button when friend request is sent */
   font-family: 'roboto', sans-serif;
   font-size: 14px;
-  background-color: #c87247;
+  background-color: rgb(84,61,123);
   color: white;
   border: 0; /* Remove border */
   border-radius: 20px; /* Adjust the value to change the roundness */
