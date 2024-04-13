@@ -40,6 +40,7 @@
 
 .postCenter{
     margin: 20px 0;
+    max-width: 600px;
 }
 
 .postImg{
@@ -108,8 +109,9 @@
 
 .customPostText {
   /* Add your custom styles for the post text here */
+  
   font-size: 16px;
   line-height: 1.5;
   color: #0d0d0d;
-  /* Add any other styles you want */
+  letter-spacing: 0.5px;
 }
