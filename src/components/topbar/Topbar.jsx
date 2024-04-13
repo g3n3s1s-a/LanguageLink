@@ -1,5 +1,6 @@
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
+import logoImage from "./home_logo2.png";
 
 export default function Topbar() {
   return (

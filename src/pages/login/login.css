@@ -38,7 +38,7 @@
   font-weight: 800;
   color: #543D7B;
   margin-bottom: 10px;
-  margin-top: -100px;
+  margin-top: 00px;
 }
 
 .loginLogo img {
@@ -48,7 +48,7 @@
 
 .loginDesc {
   font-size: 24px;
-  margin-top: -40px;
+  margin-top: 0px;
   margin-left: 20px;
   font-family: 'Roboto', sans-serif;
 }
