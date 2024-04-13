@@ -16,7 +16,15 @@
   display: flex;
 }
 
-.loginLeft,
+.loginLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+  margin-left: -30px;
+}
+
 .loginRight {
   flex: 1;
   display: flex;
@@ -30,10 +38,19 @@
   font-weight: 800;
   color: #543D7B;
   margin-bottom: 10px;
+  margin-top: -100px;
+}
+
+.loginLogo img {
+  width: auto;
+  height: auto; 
 }
 
 .loginDesc {
   font-size: 24px;
+  margin-top: -40px;
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .loginBox{
@@ -72,6 +89,7 @@
 .loginForgot{
     text-align: center;
     color: #1775ee;
+    cursor: pointer;
 }
 
 .loginRegisterButton{
