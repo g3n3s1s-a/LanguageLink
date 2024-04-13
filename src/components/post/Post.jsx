@@ -17,16 +17,23 @@ export default function Post({ post }) {
     // Logic to send friend request
     console.log("Friend request sent to user with id:", post.userId);
     setFriendRequestSent(!friendRequestSent); // Update state to indicate friend request is sent
-    const button = document.querySelector('.sendFriendRequestButton');
-    button.classList.toggle('sent', friendRequestSent);
+    const button = document.querySelector(".sendFriendRequestButton");
+    button.classList.toggle("sent", friendRequestSent);
   };
 
   return (
     <div className="post">
       <div className="postWrapper">
         <div className="postCenter">
-          <img className="postImg" src={Users.filter((u) => u.id === post?.userId)[0].profilePicture} alt="" />
-          <span className="postText customPostText" dangerouslySetInnerHTML={{ __html: post?.desc }}></span>
+          <img
+            className="postImg"
+            src={Users.filter((u) => u.id === post?.userId)[0].profilePicture}
+            alt=""
+          />
+          <span
+            className="postText customPostText  centered-text"
+            dangerouslySetInnerHTML={{ __html: post?.desc }}
+          ></span>
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
@@ -42,16 +49,18 @@ export default function Post({ post }) {
               onClick={likeHandler}
               alt=""
             />
-            <span className="postLikeCounter">{like} people like it</span>
+            <span className="postLikeCounter">{like} likes</span>
           </div>
           <div className="postBottomRight">
-          <button
+            <button
               id={`sendFriendRequestButton_${post.id}`}
-              className={`sendFriendRequestButton ${friendRequestSent ? 'sent' : ''}`}
+              className={`sendFriendRequestButton ${
+                friendRequestSent ? "sent" : ""
+              }`}
               onClick={() => sendFriendRequest(post.id)}
             >
-              {friendRequestSent ? 'Request Sent' : 'Send Friend Request'}
-            </button>         
+              {friendRequestSent ? "Request Sent" : "Send Friend Request"}
+            </button>
           </div>
         </div>
       </div>
