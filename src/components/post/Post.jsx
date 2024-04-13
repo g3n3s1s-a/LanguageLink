@@ -6,10 +6,19 @@ import { useState } from "react";
 export default function Post({ post }) {
   const [like, setLike] = useState(post.like);
   const [isLiked, setIsLiked] = useState(false);
+  const [friendRequestSent, setFriendRequestSent] = useState(false);
 
   const likeHandler = () => {
     setLike(isLiked ? like - 1 : like + 1);
     setIsLiked(!isLiked);
+  };
+
+  const sendFriendRequest = () => {
+    // Logic to send friend request
+    console.log("Friend request sent to user with id:", post.userId);
+    setFriendRequestSent(!friendRequestSent); // Update state to indicate friend request is sent
+    const button = document.querySelector('.sendFriendRequestButton');
+    button.classList.toggle('sent', friendRequestSent);
   };
 
   return (
@@ -17,7 +26,7 @@ export default function Post({ post }) {
       <div className="postWrapper">
         <div className="postCenter">
           <img className="postImg" src={Users.filter((u) => u.id === post?.userId)[0].profilePicture} alt="" />
-          <span className="postText" dangerouslySetInnerHTML={{ __html: post?.desc }}></span>
+          <span className="postText customPostText" dangerouslySetInnerHTML={{ __html: post?.desc }}></span>
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
@@ -36,7 +45,13 @@ export default function Post({ post }) {
             <span className="postLikeCounter">{like} people like it</span>
           </div>
           <div className="postBottomRight">
-            <span className="postCommentText">{post.comment} comments</span>
+          <button
+              id={`sendFriendRequestButton_${post.id}`}
+              className={`sendFriendRequestButton ${friendRequestSent ? 'sent' : ''}`}
+              onClick={() => sendFriendRequest(post.id)}
+            >
+              {friendRequestSent ? 'Request Sent' : 'Send Friend Request'}
+            </button>         
           </div>
         </div>
       </div>

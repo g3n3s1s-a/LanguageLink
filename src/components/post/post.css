@@ -78,3 +78,38 @@
     border-bottom: 1px dashed gray;
     font-size: 15px;
 }
+
+.sendFriendRequestButton {
+  /* Styles for the send friend request button */
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
+  background-color: #465892;
+  color: white;
+  border: 0; /* Remove border */
+  border-radius: 20px; /* Adjust the value to change the roundness */
+  padding: 10px 20px;
+  width: 170px; 
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sendFriendRequestButton.sent {
+  /* Styles for the button when friend request is sent */
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
+  background-color: #c87247;
+  color: white;
+  border: 0; /* Remove border */
+  border-radius: 20px; /* Adjust the value to change the roundness */
+  padding: 10px 20px;
+}
+
+.customPostText {
+  /* Add your custom styles for the post text here */
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0d0d0d;
+  /* Add any other styles you want */
+}
