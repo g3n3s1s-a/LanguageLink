@@ -5,7 +5,7 @@ import Register from "./pages/register/Register";
 import "./global.css";
 
 function App() {
-  return <Login />;
+  return <Profile />;
 }
 
 export default App;
