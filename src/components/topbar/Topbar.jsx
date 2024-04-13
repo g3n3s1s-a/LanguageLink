@@ -1,12 +1,15 @@
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 import logoImage from "./home_logo2.png";
+import { NavLink } from 'react-router-dom';
 
 export default function Topbar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
+      <NavLink exact="true" activeclassname="active" to='/home'>
         <img src={logoImage} alt="Logo" />
+      </NavLink>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
@@ -24,8 +27,10 @@ export default function Topbar() {
         </div> */}
         <div className="topbarIcons">
           <div className="topbarIconItem">
-            <Person />
+          <NavLink exact="true" activeclassname="active" to='/profile'>
+            <Person className="personIcon" />
             <span className="topbarIconBadge">1</span>
+          </NavLink>
           </div>
           <div className="topbarIconItem">
             <Chat />
@@ -36,7 +41,9 @@ export default function Topbar() {
             <span className="topbarIconBadge">1</span>
           </div>
         </div>
-        <img src="/assets/person/1.jpeg" alt="" className="topbarImg" />
+        <NavLink exact="true" activeclassname="active" to='/profile'>
+          <img src="/assets/person/1.jpeg" alt="" className="topbarImg" />
+        </NavLink>
       </div>
     </div>
   );

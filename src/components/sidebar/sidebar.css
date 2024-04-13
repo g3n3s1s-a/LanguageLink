@@ -53,3 +53,7 @@
   margin: 0;
   list-style: none;
 }
+
+.sidebarLink {
+  text-decoration: none; /* Remove underline from links */
+}

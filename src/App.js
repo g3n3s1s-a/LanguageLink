@@ -5,9 +5,15 @@ import Register from "./pages/register/Register";
 import "./global.css";
 import { Routes, Route } from 'react-router-dom'
 
-
 function App() {
-  return <Profile />;
+  return (
+    <Routes>
+      <Route path="/" element={<Login />} index />
+      <Route path="/home" element={<Home />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/profile" element={<Profile />} />
+    </Routes>
+  );
 }
 
 export default App;
