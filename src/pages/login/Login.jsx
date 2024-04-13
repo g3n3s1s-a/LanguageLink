@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import logoImage from "./language_logo.png";
 import Register from "../register/Register";
-import getUsersFromBack4App from './loginfunctions';
+import { getUsersFromBack4App } from './loginfunctions';
 import Home from '../home/Home';
 
 export default function Login() {
@@ -34,7 +34,7 @@ export default function Login() {
 
   const handleRegister = () => {
     console.log('Register button clicked');
-    navigate('/register'); ;
+    setPage(<Register />);
   };
 
   const handleInputChange = (e) => {
