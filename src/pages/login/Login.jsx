@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import logoImage from "./language_logo.png";
 import Register from "../register/Register";
-import getUsersFromBack4App from './loginfunctions';
+import { getUsersFromBack4App } from './loginfunctions';
 import Home from '../home/Home';
 
 

@@ -1,5 +1,5 @@
 // Function to fetch users with a specific username from Back4App
-const getUsersFromBack4App = async (username) => {
+export const getUsersFromBack4App = async (username) => {
   // Replace these values with your actual credentials
   const applicationId = 'j0qWvftCyQapjaGIyP4bCvY7nZlKh10RuknVZ16E';
   const restApiKey = 'HA9QADek4k3Jo2YRVkZ9qTPqtQKBVq9ds64ICSRN';
@@ -31,8 +31,3 @@ const getUsersFromBack4App = async (username) => {
     throw error; // Re-throw the error for better error handling
   }
 };
-
-// Example usage:
-
-
-export default getUsersFromBack4App;
