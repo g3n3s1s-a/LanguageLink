@@ -7,7 +7,7 @@ import { Routes, Route } from 'react-router-dom'
 
 
 function App() {
-  return <Home />;
+  return <Profile />;
 }
 
 export default App;
