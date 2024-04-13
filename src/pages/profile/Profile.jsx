@@ -20,14 +20,14 @@ export default function Profile() {
               />
               <img
                 className="profileUserImg"
-                src="assets/person/7.jpeg"
+                src="assets/person/1.jpeg"
                 alt=""
               />
             </div>
             <div className="profileInfo">
-              <h4 className="profileInfoName">Safak Kocaoglu</h4>
+              <h4 className="profileInfoName">Carla Smith</h4>
               <span className="profileInfoDesc">
-                Hello my friends I want to learn Spanish!
+                Hello my friends I want to learn Danish!
               </span>
             </div>
           </div>
