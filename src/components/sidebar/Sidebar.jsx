@@ -13,6 +13,7 @@ import {
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
 import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 export default function Sidebar() {
   return (
@@ -40,7 +41,9 @@ export default function Sidebar() {
             <span className="sidebarListItemText">Questions</span>
           </li>
         </ul>
-        <button className="sidebarButton">Logout</button>
+        <NavLink exact="true" activeclassname="active" to='/'>
+          <button className="sidebarButton">Logout</button>
+        </NavLink>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
           {Users.map((u) => (

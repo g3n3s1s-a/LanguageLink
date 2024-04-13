@@ -6,9 +6,10 @@ import { createUser } from "../login/loginfunctions";
 import Login from "../login/Login";
 import Home from "../home/Home";
 
+
 export default function Register() {
-
-
+  
+  const [error, setError] = useState(null);
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
   const [age, setAge] = useState('');
