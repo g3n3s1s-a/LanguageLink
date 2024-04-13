@@ -1,11 +1,12 @@
 import "./topbar.css";
+import logoImage from "./home_logo2.png"
 // import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 
 export default function Topbar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">LanguageLink</span>
+        <img src={logoImage} alt="Logo" />
       </div>
       <div className="topbarCenter">
         <div className="searchbar">

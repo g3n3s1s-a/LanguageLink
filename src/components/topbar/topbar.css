@@ -12,6 +12,13 @@
 
 .topbarLeft {
   flex: 3;
+  
+}
+
+.topbarLeft img {
+  width: 250px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 12px;
 }
 
 .logo {
@@ -43,6 +50,7 @@
 .searchInput {
   border: none;
   width: 70%;
+  margin-left: 10px;
 }
 
 .searchInput:focus {
