@@ -1,13 +1,16 @@
 import "./register.css";
+import logoImage from "./language_logo.png";
 
 export default function Register() {
   return (
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">LanguageLink</h3>
+          <h3 className="loginLogo">
+            <img src={logoImage} alt="Logo" />
+          </h3>
           <span className="loginDesc">
-            Connect with other like-minded indivials here on LanguageLink!
+            Connect with other like minded individuals here on LanguageLink!
           </span>
         </div>
         <div className="loginRight">
