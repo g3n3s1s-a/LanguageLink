@@ -1,7 +1,10 @@
 .login {
-  width: 100vw;
-  height: 100vh;
-  background-color: #f0f2f5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #d9c6e4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,10 +24,11 @@
   justify-content: center;
 }
 
+
 .loginLogo {
   font-size: 50px;
   font-weight: 800;
-  color: #1775ee;
+  color: #543D7B;
   margin-bottom: 10px;
 }
 
@@ -35,7 +39,7 @@
 .loginBox{
     height: 300px;
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -58,7 +62,7 @@
     height: 50px;
     border-radius: 10px;
     border: none;
-    background-color: #1775ee;
+    background-color: #543D7B;
     color: white;
     font-size: 20px;
     font-weight: 500;
@@ -76,7 +80,7 @@
     height: 50px;
     border-radius: 10px;
     border: none;
-    background-color: #42b72a;
+    background-color: #543D7B;
     color: white;
     font-size: 20px;
     font-weight: 500;
