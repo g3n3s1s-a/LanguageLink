@@ -5,21 +5,26 @@ export default function Register() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Lamasocial</h3>
+          <h3 className="loginLogo">LanguageLink</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Lamasocial.
+            Connect with other like-minded indivials here on LanguageLink!
           </span>
         </div>
         <div className="loginRight">
           <div className="loginBox">
+            <input placeholder="Name" className="loginInput" />
+            <input placeholder="Age" className="loginInput" />
+            <input
+              placeholder="Language you want to learn"
+              className="loginInput"
+            />
+            <input placeholder="Language you speak" className="loginInput" />
             <input placeholder="Username" className="loginInput" />
             <input placeholder="Email" className="loginInput" />
             <input placeholder="Password" className="loginInput" />
             <input placeholder="Password Again" className="loginInput" />
             <button className="loginButton">Sign Up</button>
-            <button className="loginRegisterButton">
-              Log into Account
-            </button>
+            <button className="loginRegisterButton">Log into Account</button>
           </div>
         </div>
       </div>
