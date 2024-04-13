@@ -1,5 +1,9 @@
 import "./login.css";
 import logoImage from "./language_logo.png"; 
+import React, { useState } from 'react';
+import getUsersFromBack4App from './loginfunctions';
+import Home from '../home/Home';
+import Register from '../register/Register';
 
 export default function Login({ setPage }) {
   const [username, setUsername] = useState('');
