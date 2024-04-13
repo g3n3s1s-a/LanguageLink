@@ -31,3 +31,36 @@ export const getUsersFromBack4App = async (username) => {
     throw error; // Re-throw the error for better error handling
   }
 };
+export const createUser = async (userData) => {
+
+  const url = 'https://parseapi.back4app.com/users';
+  const applicationId = 'KIqm07VOYI2WL0XVKcgAmt4f69WAVDZPsklUXeA6';
+  const restApiKey = 'u2TXSCSJ60tkst790RLnaoGja01FkGLO8dswhzdL';
+
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'X-Parse-Application-Id': applicationId,
+        'X-Parse-REST-API-Key': restApiKey,
+        'X-Parse-Revocable-Session': 1,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(userData)
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to sign up user: HTTP error ${response.status}`);
+    }
+
+    const responseData = await response.json();
+    console.log('User signed up successfully:', responseData);
+    return responseData;
+  } catch (error) {
+    console.error('Error while signing up user:', error);
+    throw error;
+  }
+};
+
+

@@ -7,7 +7,6 @@ import Home from '../home/Home';
 
 
 export default function Login({ setPage }) {
-  
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null); // New state for error handling
@@ -34,7 +33,7 @@ export default function Login({ setPage }) {
 
   const handleRegister = () => {
     console.log('Register button clicked');
-    setPage(<Register />);
+    setPage(<Register setPage={setPage} />);
   };
 
   const handleInputChange = (e) => {
@@ -75,9 +74,9 @@ export default function Login({ setPage }) {
               onChange={handleInputChange}
             />
             {error && <div className="error">{error}</div>} {/* Render error message */}
-              <button className="loginButton" onClick={handleLogin}>
-                Log In
-              </button> 
+            <button className="loginButton" onClick={handleLogin}>
+              Log In
+            </button>
             <span className="loginForgot">Forgot Password?</span>
             <button className="loginRegisterButton" onClick={handleRegister}>
               Create a New Account
