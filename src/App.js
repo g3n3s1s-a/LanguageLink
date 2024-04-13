@@ -7,7 +7,7 @@ import "./global.css";
 
 
 function App() {
-  return <Login />;
+  return <Home />;
 }
 
 export default App;

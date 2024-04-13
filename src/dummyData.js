@@ -190,7 +190,7 @@ export const Posts = [
     id: 10,
     desc:
       "Username: " +
-      Users.find((user) => user.id === 9).username +
+      Users.find((user) => user.id === 10).username +
       "<br>Age: 32<br>Gender: Male" +
       "<br>Location: Alaska<br>Occupation: Retired<br>" +
       "Language can teach: Dutch<br>Language want to learn: Protuguese<br>" +

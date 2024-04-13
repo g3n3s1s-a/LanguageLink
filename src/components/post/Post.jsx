@@ -32,7 +32,7 @@ export default function Post({ post }) {
             alt=""
           />
           <span
-            className="postText customPostText  centered-text"
+            className="postText customPostText centered-text"
             dangerouslySetInnerHTML={{ __html: post?.desc }}
           ></span>
         </div>
