@@ -2,9 +2,8 @@
 import React, { useState } from 'react';
 import logoImage from "./language_logo.png";
 import Register from "../register/Register";
-import { getUsersFromBack4App } from './loginfunctions';
+import getUsersFromBack4App from './loginfunctions';
 import Home from '../home/Home';
-import { Link, useNavigate } from 'react-router-dom';
 
 export default function Login() {
   const [username, setUsername] = useState('');
