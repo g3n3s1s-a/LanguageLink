@@ -5,7 +5,7 @@ export default function Share() {
   return (
     <div className="share">
       <div className="shareWrapper">
-        <span>Connect Feed</span>
+        <span>Connection Feed</span>
       </div>
     </div>
   );

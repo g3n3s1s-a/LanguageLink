@@ -4,6 +4,8 @@ import Profile from "./pages/profile/Profile";
 import Register from "./pages/register/Register";
 import './global.css';
 
+
+
 function App() {
   return <Home />;
 }

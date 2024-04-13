@@ -15,7 +15,8 @@ export default function Post({ post }) {
 
   const sendFriendRequest = () => {
     // Logic to send friend request
-    console.log("Friend request sent to user with id:", post.userId);
+    const user = Users.find((user) => user.id === post.userId);
+  alert(`Friend request sent to ${user.username}`);
     setFriendRequestSent(!friendRequestSent); // Update state to indicate friend request is sent
     const button = document.querySelector('.sendFriendRequestButton');
     button.classList.toggle('sent', friendRequestSent);
