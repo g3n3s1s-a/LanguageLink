@@ -1,9 +1,5 @@
-
-import React, { useState } from 'react';
-import logoImage from "./language_logo.png";
-import Register from "../register/Register";
-import getUsersFromBack4App from './loginfunctions';
-import Home from '../home/Home';
+import "./login.css";
+import logoImage from "./language_logo.png"; 
 
 export default function Login({ setPage }) {
   const [username, setUsername] = useState('');
@@ -57,25 +53,9 @@ export default function Login({ setPage }) {
         </div>
         <div className="loginRight">
           <div className="loginBox">
-            <input
-              placeholder="Username"
-              className="loginInput"
-              name="username"
-              value={username}
-              onChange={handleInputChange}
-            />
-            <input
-              placeholder="Password"
-              className="loginInput"
-              name="password"
-              type="password"
-              value={password}
-              onChange={handleInputChange}
-            />
-            {error && <div className="error">{error}</div>} {/* Render error message */}
-            <button className="loginButton" onClick={handleLogin}>
-              Log In
-            </button>
+            <input placeholder="Email" className="loginInput" />
+            <input placeholder="Password" className="loginInput" />
+            <button className="loginButton">Log In</button>
             <span className="loginForgot">Forgot Password?</span>
             <button className="loginRegisterButton" onClick={handleRegister}>
               Create a New Account
