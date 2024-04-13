@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "./register.css";
 
 export default function Register() {
-  // State variables to store input values
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [languageToLearn, setLanguageToLearn] = useState('');
@@ -12,7 +11,6 @@ export default function Register() {
   const [password, setPassword] = useState('');
   const [passwordAgain, setPasswordAgain] = useState('');
 
-  // Function to handle form submission
   const handleSignUp = () => {
     // Perform validation or submit the form data
     if (password !== passwordAgain)
@@ -42,7 +40,7 @@ export default function Register() {
     console.log('Email:', email);
     console.log('Password:', password);
     console.log('Password Again:', passwordAgain);
-  };
+  }
 
   return (
     <div className="login">
@@ -50,7 +48,7 @@ export default function Register() {
         <div className="loginLeft">
           <h3 className="loginLogo">LanguageLink</h3>
           <span className="loginDesc">
-            Connect with other like-minded individuals here on LanguageLink!
+            Connect with other like-minded indivials here on LanguageLink!
           </span>
         </div>
         <div className="loginRight">
@@ -71,3 +69,10 @@ export default function Register() {
     </div>
   );
 }
+
+
+
+
+
+
+
