@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 import { createUser } from "../login/loginfunctions";
 import Login from "../login/Login";
 import Home from "../home/Home";
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Register() {
-  
+  const navigate = useNavigate();
   const [error, setError] = useState(null);
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -22,7 +23,7 @@ export default function Register() {
 
   const handleLogin = () => {
     console.log("switching to login")
-    return <Link> to="/login" </Link>;
+    navigate('/');
   }
 
   const handleSignUp = async () => {
@@ -51,6 +52,15 @@ export default function Register() {
     console.log('Email:', email);
     console.log('Password:', password);
     console.log('Password Again:', passwordAgain);
+
+    try {
+      const user = await createUser(formData);
+      console.log(user);
+      navigate('/home');
+    } catch (error) {
+      console.error('Error creating user:', error);
+      setError(error.message);
+    }
   };
 
   return (

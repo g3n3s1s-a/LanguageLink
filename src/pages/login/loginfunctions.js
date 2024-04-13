@@ -1,8 +1,8 @@
 // Function to fetch users with a specific username from Back4App
 export const getUsersFromBack4App = async (username) => {
   // Replace these values with your actual credentials
-  const applicationId = 'j0qWvftCyQapjaGIyP4bCvY7nZlKh10RuknVZ16E';
-  const restApiKey = 'HA9QADek4k3Jo2YRVkZ9qTPqtQKBVq9ds64ICSRN';
+  const applicationId = 'KIqm07VOYI2WL0XVKcgAmt4f69WAVDZPsklUXeA6';
+  const restApiKey = 'u2TXSCSJ60tkst790RLnaoGja01FkGLO8dswhzdL';
 
   // Construct the URL with query parameters to filter users by username
   const url = `https://parseapi.back4app.com/classes/_User?where={"username":"${username}"}`;
