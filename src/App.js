@@ -7,9 +7,6 @@ import "./global.css";
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
-  const [page, setPage] = useState(null); // Initialize setPage with null
-
-  return <>{page ? page : <Login setPage={setPage} />}</>; // Render Login only if page is null
   return (
     <Routes>
       <Route path="/" element={<Login />} index />

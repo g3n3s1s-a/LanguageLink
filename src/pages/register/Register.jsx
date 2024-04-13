@@ -5,8 +5,10 @@ import { Link } from 'react-router-dom';
 import { createUser } from "../login/loginfunctions";
 import Login from "../login/Login";
 import Home from "../home/Home";
+import { useNavigate } from 'react-router-dom';
 
-export default function Register({ setPage }) {
+
+export default function Register() {
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
   const [age, setAge] = useState('');
@@ -17,10 +19,11 @@ export default function Register({ setPage }) {
   const [password, setPassword] = useState('');
   const [passwordAgain, setPasswordAgain] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate(); 
 
   const handleLogin = () => {
     console.log("switching to login");
-    setPage(<Login />);
+    navigate('/');
   };
 
   const handleSignUp = async () => {
@@ -44,7 +47,7 @@ export default function Register({ setPage }) {
     try {
       const response = await createUser(formData);
       console.log('User created successfully:', response);
-      setPage(<Home />);
+      navigate('/home');
     } catch (error) {
       console.error('Error creating user:', error);
       setError('Failed to create user. Please try again.');
@@ -53,50 +56,6 @@ export default function Register({ setPage }) {
 
 
 
-  const [name, setName] = useState('');
-  const [age, setAge] = useState('');
-  const [languageToLearn, setLanguageToLearn] = useState('');
-  const [languageSpoken, setLanguageSpoken] = useState('');
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [passwordAgain, setPasswordAgain] = useState('');
-
-  const handleLogin = () => {
-    console.log("switching to login")
-    return <Link> to="/login" </Link>;
-  }
-
-  const handleSignUp = () => {
-    // Perform validation or submit the form data
-    if (password !== passwordAgain)
-    {
-      console.log('Passwords do not match');
-      return;
-
-    }
-
-
-    const formData = {
-      name: name,
-      age: age,
-      language_learn: languageToLearn,
-      language_teach: languageSpoken,
-      username: username,
-      email: email,
-      password: password,
-      passwordAgain: passwordAgain
-    };
-
-    console.log('Name:', name);
-    console.log('Age:', age);
-    console.log('Language to Learn:', languageToLearn);
-    console.log('Language Spoken:', languageSpoken);
-    console.log('Username:', username);
-    console.log('Email:', email);
-    console.log('Password:', password);
-    console.log('Password Again:', passwordAgain);
-  };
 
   return (
     <div className="login">

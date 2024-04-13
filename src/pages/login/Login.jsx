@@ -4,12 +4,14 @@ import logoImage from "./language_logo.png";
 import Register from "../register/Register";
 import { getUsersFromBack4App } from './loginfunctions';
 import Home from '../home/Home';
+import { Link, useNavigate } from 'react-router-dom';
 
-
-export default function Login({ setPage }) {
+export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null); // New state for error handling
+  const navigate = useNavigate(); // Hook for navigation
+
 
   const handleLogin = async () => {
     console.log('Login button clicked');
@@ -23,7 +25,7 @@ export default function Login({ setPage }) {
         setError('User not found. Please register'); // Set error state
       } else {
         console.log("shit works my boyyyyyy")
-        setPage(<Home />);
+        navigate('/home'); 
       }
     } catch (error) {
       console.error('Error fetching users:', error);
@@ -33,7 +35,7 @@ export default function Login({ setPage }) {
 
   const handleRegister = () => {
     console.log('Register button clicked');
-    setPage(<Register setPage={setPage} />);
+    navigate('/register'); ;
   };
 
   const handleInputChange = (e) => {
