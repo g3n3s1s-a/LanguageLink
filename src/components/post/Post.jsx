@@ -1,5 +1,5 @@
 import "./post.css";
-// import { MoreVert } from "@material-ui/icons";
+import { MoreVert } from "@mui/icons-material";
 import { Users } from "../../dummyData";
 import { useState } from "react";
 
@@ -26,7 +26,9 @@ export default function Post({ post }) {
             </span>
             <span className="postDate">{post.date}</span>
           </div>
-          <div className="postTopRight">{/* <MoreVert /> */}</div>
+          <div className="postTopRight">
+            <MoreVert />
+          </div>
         </div>
         <div className="postCenter">
           <span className="postText">{post?.desc}</span>
