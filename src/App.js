@@ -13,6 +13,7 @@ function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/aboutus" element={<Aboutus />} />
     </Routes>
   );
 }

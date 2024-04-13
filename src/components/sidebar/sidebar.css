@@ -60,3 +60,7 @@
 .sidebarLink {
   text-decoration: none; /* Remove underline from links */
 }
+.sidebarLink2 {
+  text-decoration: none;
+  margin-top: 0; /* Remove underline from links */
+}

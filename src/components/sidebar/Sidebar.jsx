@@ -37,8 +37,10 @@ export default function Sidebar() {
           </li>
 
           <li className="sidebarListItem">
+          <Link className="sidebarLink2" to="/aboutus">
             <HelpOutline className="sidebarIcon" />
             <span className="sidebarListItemText">About Us</span>
+          </Link>
           </li>
         </ul>
         <NavLink exact="true" activeclassname="active" to="/">
