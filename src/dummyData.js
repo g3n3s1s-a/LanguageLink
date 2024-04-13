@@ -54,11 +54,13 @@ export const Users = [
 export const Posts = [
   {
     id: 1,
-    desc: "Username: " + Users.find(user => user.id === 1).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 1).username +
+      "<br>Age: 25<br>Gender: Female" +
+      "<br>Location: New York<br>Occupation: Software Engineer<br>" +
+      "Language can teach: English, Coding<br>Language Want to Learn: Danish<br>" +
+      "About me: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, and learning about different cultures. I'm always looking for new opportunities to learn and grow.",
     date: "5 mins ago",
     userId: 1,
     like: 32,
@@ -66,11 +68,13 @@ export const Posts = [
   },
   {
     id: 2,
-    desc: "Username: " + Users.find(user => user.id === 2).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 2).username +
+      "<br>Age: 32<br>Gender: Male" +
+      "<br>Location: California<br>Occupation: Investment Banker<br>" +
+      "Language can teach: English<br>Language want to learn: Spanish<br>" +
+      "About me: I want to learn Spanish to broaden my client base",
     date: "15 mins ago",
     userId: 2,
     like: 2,
@@ -78,22 +82,27 @@ export const Posts = [
   },
   {
     id: 3,
-    desc: "Username: " + Users.find(user => user.id === 3).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",    date: "1 hour ago",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 3).username +
+      "<br>Age: 22<br>Gender: Female" +
+      "<br>Location: Washington<br>Occupation: Marketing Analyst<br>" +
+      "Language can teach: Vietnamese<br>Language want to learn: Russian<br>" +
+      "About me: I want to travel to Russia soon so I want to be able to learn some of the basics",
+    date: "1 hour ago",
     userId: 3,
     like: 61,
     comment: 2,
   },
   {
     id: 4,
-    desc: "Username: " + Users.find(user => user.id === 4).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 4).username +
+      "<br>Age: 28<br>Gender: Female" +
+      "<br>Location: Ohio<br>Occupation: Teacher<br>" +
+      "Language can teach: Dutch<br>Language want to learn: Italian<br>" +
+      "About me: I have a few students who speak Italian and I want to be able to connect with them ",
     photo: "assets/post/4.jpeg",
     date: "4 hours ago",
     userId: 4,
@@ -102,11 +111,13 @@ export const Posts = [
   },
   {
     id: 5,
-    desc: "Username: " + Users.find(user => user.id === 5).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 5).username +
+      "<br>Age: 19<br>Gender: Female" +
+      "<br>Location: New Jersey<br>Occupation: Librarian<br>" +
+      "Language can teach: French<br>Language want to learn: Mandarin<br>" +
+      "About me: I want to be able to read Chinese philosphy ",
     photo: "assets/post/5.jpeg",
     date: "5 hours ago",
     userId: 5,
@@ -115,11 +126,13 @@ export const Posts = [
   },
   {
     id: 6,
-    desc: "Username: " + Users.find(user => user.id === 6).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 6).username +
+      "<br>Age: 38<br>Gender: Male" +
+      "<br>Location: Chicago<br>Occupation: Lawyer<br>" +
+      "Language can teach: Hindi<br>Language want to learn: Spanish<br>" +
+      "About me: I want to learn Spanish to broaden my client base",
     photo: "assets/post/6.jpeg",
     date: "1 day ago",
     userId: 6,
@@ -128,12 +141,14 @@ export const Posts = [
   },
   {
     id: 7,
-    desc: "Username: " + Users.find(user => user.id === 7).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",
-    desc: "Never regret anything that made you smile.",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 7).username +
+      "<br>Age: 25<br>Gender: Male" +
+      "<br>Location: Maine<br>Occupation: Asset Manager<br>" +
+      "Language can teach: Dutch<br>Language want to learn: Spanish<br>" +
+      "About me: I want to eventually live in Spain",
+    // desc: "Never regret anything that made you smile.",
     photo: "assets/post/7.jpeg",
     date: "2 days ago",
     userId: 7,
@@ -142,11 +157,13 @@ export const Posts = [
   },
   {
     id: 8,
-    desc: "Username: " + Users.find(user => user.id === 8).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 8).username +
+      "<br>Age: 21<br>Gender: Female" +
+      "<br>Location: New York<br>Occupation: Model<br>" +
+      "Language can teach: Dutch<br>Language want to learn: German<br>" +
+      "About me: I have a modeling job in Germany soon, so I need to learn the basics",
     photo: "assets/post/8.jpeg",
     date: "3 days ago",
     userId: 8,
@@ -155,12 +172,14 @@ export const Posts = [
   },
   {
     id: 9,
-    desc: "Username: " + Users.find(user => user.id === 9).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",
-    desc: "Change the world by being yourself.",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 9).username +
+      "<br>Age: 26<br>Gender: Female" +
+      "<br>Location: Oregon<br>Occupation: Social Media Influencer<br>" +
+      "Language can teach: Swahili<br>Language want to learn: Danish<br>" +
+      "About me: I want to challenge myself and I have too much free time",
+    // desc: "Change the world by being yourself.",
     photo: "assets/post/9.jpeg",
     date: "5 days ago",
     userId: 9,
@@ -169,11 +188,13 @@ export const Posts = [
   },
   {
     id: 10,
-    desc: "Username: " + Users.find(user => user.id === 9).username+ 
-    "<br>Age: 25<br>Gender: Male"+
-    "<br>Location: New York<br>Occupation: Software Engineer<br>"+
-    "Hobbies: Reading, Writing, Coding<br>Interests: Technology, Science, Literature<br>"+
-    "Bio: I'm a software engineer who loves to read, write, and code. I'm passionate about technology, science, and literature. I'm always looking for new opportunities to learn and grow.",
+    desc:
+      "Username: " +
+      Users.find((user) => user.id === 9).username +
+      "<br>Age: 32<br>Gender: Male" +
+      "<br>Location: Alaska<br>Occupation: Retired<br>" +
+      "Language can teach: Dutch<br>Language want to learn: Protuguese<br>" +
+      "About me: I was a Dutch Professor and I want to continue teaching",
     photo: "assets/post/10.jpeg",
     date: "1 week ago",
     userId: 10,
