@@ -16,8 +16,7 @@ export default function Register() {
     if (password !== passwordAgain)
     {
       console.log('Passwords do not match');
-      return;
-    
+      return; 
     }
 
 
