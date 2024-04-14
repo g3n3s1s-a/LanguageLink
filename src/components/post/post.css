@@ -95,6 +95,25 @@
   align-items: center;
   justify-content: center;
 }
+.joinGroupButton {
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
+  background-color: #cc9a37;
+  color: white;
+  border: 0; /* Remove border */
+  border-radius: 20px; /* Adjust the value to change the roundness */
+  padding: 10px 20px;
+  width: 170px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinGroupButton.sent {
+  background-color: purple;
+  pointer-events: none; /* Make the button unclickable */
+}
 
 .sendFriendRequestButton.sent {
   /* Styles for the button when friend request is sent */

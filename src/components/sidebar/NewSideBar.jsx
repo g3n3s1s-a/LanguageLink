@@ -15,7 +15,7 @@ import CloseFriend from "../closeFriend/CloseFriend";
 import { Link, NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-export default function Sidebar() {
+export default function NewSidebar() {
   const navigate = useNavigate();
   return (
     <div className="sidebar">
