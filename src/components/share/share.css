@@ -3,15 +3,13 @@
   height: auto; /* Change height to auto */
   border-radius: 10px;
   /* box-shadow: 0px 0px 16px -8px rgb(0, 0, 0); */
-  border: 1px solid #e0e0e0;
-  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
 
   /* Positioning */
   position: relative; /* or relative, depending on your layout needs */
   top: 50%; /* Adjust as needed */
   left: 50%; /* Adjust as needed */
   transform: translate(-50%, 0%); /* Center the box horizontally and vertically */
-  
+  margin-bottom: -30px;
 }
 
 .shareWrapper {

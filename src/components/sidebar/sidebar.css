@@ -24,12 +24,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  
 }
 
 .sidebarListItem {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  
 }
 
 .sidebarIcon {
@@ -55,12 +57,38 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 10px;
+  
 }
 
 .sidebarLink {
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
+   /* Remove underline from links */
 }
 .sidebarLink2 {
   text-decoration: none;
-  margin-top: 0; /* Remove underline from links */
+  margin-top: 0;
+   /* Remove underline from links */
+}
+
+.sidebarLink3 {
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: -20px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-weight: 410;
+  width: 60%;
+  
+}
+
+.friendstext {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  /* make the bottom bigger */
+  
 }

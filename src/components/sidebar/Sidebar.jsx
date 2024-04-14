@@ -47,9 +47,16 @@ export default function Sidebar() {
           <button className="sidebarButton">Logout</button>
         </NavLink>
         <hr className="sidebarHr" />
+        <h className="friendstext">Friends</h>
+        <p></p>
         <ul className="sidebarFriendList">
+          
           {Users.map((u) => (
-            <CloseFriend key={u.id} user={u} />
+            <li key={u.id} className="sidebarListItem">
+            <Link className="sidebarLink3" to={`/user${u.id}`}>
+              <CloseFriend user={u} />
+            </Link>
+            </li>
           ))}
         </ul>
       </div>
