@@ -4,8 +4,7 @@ import Topbar from "../../components/topbar/Topbar";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-
-const apiKey ="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"
+const apiKey = process.env.REACT_APP_API_KEY;
 
 export default function Chats() {
 
@@ -20,8 +19,6 @@ export default function Chats() {
     const [inputValue, setInputValue] = useState('');
     const [chatLog, setChatLog] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    
-   
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -73,9 +70,6 @@ export default function Chats() {
     return (
       <>
         <Topbar />
-        <div className="charsContainer">
-          <Sidebar />
-        </div>
         <div className="wholebot">
             <h1>ChatBot</h1>
             <div style={{display: 'flex', flexDirection: 'column'}}>
@@ -96,9 +90,6 @@ export default function Chats() {
                 ))}
             </div>
             
-        
-
-
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Type your message..." value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
             </form>
