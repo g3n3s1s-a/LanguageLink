@@ -1,3 +1,43 @@
+
+export const Groups = [
+  {
+    id: 1,
+    profilePicture: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/800px-Flag_of_Spain.svg.png",
+    groupName: "Spanish Leaners",
+  },
+  {
+    id: 2,
+    profilePicture: "https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg",
+    groupName: "Lets learn French",
+  },
+  {
+    id: 3,
+    profilePicture: "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png",
+    groupName: "Learning Hindi",
+  },
+  {
+    id: 4,
+    profilePicture: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg",
+    groupName: "Eager for English",
+  },
+  {
+    id: 5,
+    profilePicture: "https://cdn.britannica.com/90/7490-050-5D33348F/Flag-China.jpg?w=400&h=235&c=crop",
+    groupName: "学习中文",
+  },
+  {
+    id: 6,
+    profilePicture: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Flag_of_the_Arab_League.svg",
+    groupName: "تعلم اللغة العربية",
+  },
+  {
+    id: 7,
+    profilePicture: "https://asiasociety.org/sites/default/files/styles/1200w/public/K/korean-flag.jpg",
+    groupName: "한국어 학습자 여기 모여라!",
+  }
+];
+
+
 export const Users = [
   {
     id: 1,
@@ -50,6 +90,7 @@ export const Users = [
     username: "Dmitri Kocaoglu",
   },
 ];
+
 
 export const Posts = [
   {

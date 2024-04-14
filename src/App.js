@@ -13,7 +13,7 @@ import User7 from "./pages/users/user7/user";
 import User8 from "./pages/users/user8/user";
 import User9 from "./pages/users/user9/user";
 import User10 from "./pages/users/user10/user"; 
-
+import Groups from "./pages/Groups/Groups";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./global.css";
 
@@ -35,6 +35,7 @@ function App() {
       <Route path="/user8" element={<User8 />} />
       <Route path="/user9" element={<User9 />} />
       <Route path="/user10" element={<User10 />} />
+      <Route path="/groups" element={<Groups />} />
     </Routes>
   );
 }

@@ -12,10 +12,10 @@ import {
 } from "@mui/icons-material";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export default function Sidebar() {
+export default function NewSidebar() {
   const navigate = useNavigate();
   return (
     <div className="sidebar">
@@ -40,26 +40,17 @@ export default function Sidebar() {
           </li>
 
           <li className="sidebarListItem">
-          <Link className="sidebarLink2" to="/aboutus">
             <HelpOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">About Us</span>
-          </Link>
+            <span className="sidebarListItemText">Questions</span>
           </li>
         </ul>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink exact={true} activeClassName="active" to='/'>
           <button className="sidebarButton">Logout</button>
         </NavLink>
         <hr className="sidebarHr" />
-        <h className="friendstext">Friends</h>
-        <p></p>
         <ul className="sidebarFriendList">
-          
           {Users.map((u) => (
-            <li key={u.id} className="sidebarListItem">
-            <Link className="sidebarLink3" to={`/user${u.id}`}>
-              <CloseFriend user={u} />
-            </Link>
-            </li>
+            <CloseFriend key={u.id} user={u} />
           ))}
         </ul>
       </div>
