@@ -41,6 +41,7 @@
   }
   
   .aboutus-values li {
+    font-weight: bold;
     margin-bottom: 8px;
     color: #555;
   }
@@ -51,7 +52,7 @@
   
   li {
     font-size: 20px;
-    font-weight: bold;
+    
     color: #333;
   }
   
@@ -66,4 +67,11 @@
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    width: 250px; /* Set a fixed width for the sidebar */
+    flex: none; /* Prevent the sidebar from growing or shrinking */
+    background-color: #f0f2f5; /* Set background color */
+    padding: 20px; /* Add padding */
   }

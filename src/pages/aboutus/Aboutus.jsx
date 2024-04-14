@@ -8,8 +8,9 @@ export default function Aboutus() {
   return (
     <>
       <Topbar />
+      
       <div className="homeContainer">
-        <Sidebar />
+      <Sidebar />
         <div className="aboutus">
           <div className="aboutus-wrapper">
             <div className="aboutus-content">
