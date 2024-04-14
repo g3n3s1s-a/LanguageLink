@@ -12,8 +12,9 @@ import User6 from "./pages/users/user6/user";
 import User7 from "./pages/users/user7/user";
 import User8 from "./pages/users/user8/user";
 import User9 from "./pages/users/user9/user";
-import User10 from "./pages/users/user10/user"; 
+import User10 from "./pages/users/user10/user";
 import Groups from "./pages/Groups/Groups";
+import Chats from "./pages/chats/Chats";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./global.css";
 
@@ -36,6 +37,7 @@ function App() {
       <Route path="/user9" element={<User9 />} />
       <Route path="/user10" element={<User10 />} />
       <Route path="/groups" element={<Groups />} />
+      <Route path="/chats" element={<Chats />} />
     </Routes>
   );
 }

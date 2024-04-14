@@ -29,22 +29,24 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className="sidebarListItem">
-            <Chat className="sidebarIcon" />
-            <span className="sidebarListItemText">Chats</span>
+            <Link className="sidebarLink" to="/chats">
+              <Chat className="sidebarIcon" />
+              <span className="sidebarListItemText">Chats</span>
+            </Link>
           </li>
 
           <li className="sidebarListItem">
-          <Link className="sidebarLink2" to="/groups">
+            <Link className="sidebarLink2" to="/groups">
               <Group className="sidebarIcon" />
               <span className="sidebarListItemText">Groups</span>
             </Link>
           </li>
 
           <li className="sidebarListItem">
-          <Link className="sidebarLink2" to="/aboutus">
-            <HelpOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">About Us</span>
-          </Link>
+            <Link className="sidebarLink2" to="/aboutus">
+              <HelpOutline className="sidebarIcon" />
+              <span className="sidebarListItemText">About Us</span>
+            </Link>
           </li>
         </ul>
         <NavLink exact="true" activeclassname="active" to="/">
@@ -54,12 +56,11 @@ export default function Sidebar() {
         <h className="friendstext">Friends</h>
         <p></p>
         <ul className="sidebarFriendList">
-          
           {Users.map((u) => (
             <li key={u.id} className="sidebarListItem">
-            <Link className="sidebarLink3" to={`/user${u.id}`}>
-              <CloseFriend user={u} />
-            </Link>
+              <Link className="sidebarLink3" to={`/user${u.id}`}>
+                <CloseFriend user={u} />
+              </Link>
             </li>
           ))}
         </ul>
