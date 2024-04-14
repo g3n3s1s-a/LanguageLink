@@ -56,7 +56,7 @@ export default function Register() {
     try {
       const user = await createUser(formData);
       console.log(user);
-      navigate('/home');
+      navigate('/');
     } catch (error) {
       console.error('Error creating user:', error);
       setError(error.message);

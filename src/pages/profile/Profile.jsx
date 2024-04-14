@@ -1,7 +1,7 @@
 import "./profile.css";
 import Topbar from "../../components/topbar/Topbar";
 import Sidebar from "../../components/sidebar/Sidebar";
-import Feed1 from "../../components/feed/Feed";
+import Feed1 from "../../components/feed/Feed2";
 import Rightbar from "../../components/rightbar/Rightbar";
 
 

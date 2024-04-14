@@ -58,7 +58,7 @@
   margin: 0;
   list-style: none;
   margin-bottom: 10px;
-  
+  text-decoration: underline;
 }
 
 .sidebarLink {
@@ -90,4 +90,8 @@
   color: black;
   /* make the bottom bigger */
   
+}
+
+.sidebarButton:hover{
+  background-color:#8435a3;
 }

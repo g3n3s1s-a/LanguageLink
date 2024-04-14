@@ -106,6 +106,7 @@
   margin-right: 20px;
 }
 
-.personIcon {
+.personIcon,
+.chatIcon {
   color: white; /* Set the color to white */
 }

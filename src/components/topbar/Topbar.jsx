@@ -33,8 +33,10 @@ export default function Topbar() {
           </NavLink>
           </div>
           <div className="topbarIconItem">
-            <Chat />
+          <NavLink exact="true" activeclassname="active" to='/chats'>
+            <Chat className = "chatIcon"/>
             <span className="topbarIconBadge">2</span>
+          </NavLink>
           </div>
           <div className="topbarIconItem">
             <Notifications />
