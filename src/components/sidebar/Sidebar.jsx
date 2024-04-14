@@ -14,6 +14,7 @@ import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Sidebar() {
   const navigate = useNavigate();
@@ -33,10 +34,10 @@ export default function Sidebar() {
           </li>
 
           <li className="sidebarListItem">
-          <NavLink exact={true} activeClassName="active" to='/groups'>
+          <Link className="sidebarLink2" to="/groups">
               <Group className="sidebarIcon" />
               <span className="sidebarListItemText">Groups</span>
-            </NavLink>
+            </Link>
           </li>
 
           <li className="sidebarListItem">

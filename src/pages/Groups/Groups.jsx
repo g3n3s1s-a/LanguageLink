@@ -4,21 +4,20 @@ import NewSidebar from "../../components/sidebar/Sidebar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Rightbar from "../../components/rightbar/Rightbar";
 import Feed from "../../components/feed/Feed";
-import ProfileRightbar from './Newbar';
 import { useNavigate } from "react-router-dom";
 import GroupFeed from "./GroupFeed";
 
 
 export default function Groups() {
     
-    return (
-        <>
-          <Topbar />
-          <div className="homeContainer">
-            <Sidebar />
-            <GroupFeed/>
-            <Rightbar/>
-          </div>
-        </>
-      );
-    }
+  return (
+    <>
+      <Topbar />
+      <div className="homeContainer">
+        <Sidebar />
+        <GroupFeed />
+        <Rightbar />
+      </div>
+    </>
+  );
+}

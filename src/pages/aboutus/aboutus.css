@@ -70,7 +70,7 @@
   }
   
   .sidebar {
-    width: 250px; /* Set a fixed width for the sidebar */
+    width: 20%; /* Set a fixed width for the sidebar */
     flex: none; /* Prevent the sidebar from growing or shrinking */
     background-color: #f0f2f5; /* Set background color */
     padding: 20px; /* Add padding */

@@ -1,8 +1,9 @@
 import "./profile.css";
 import Topbar from "../../components/topbar/Topbar";
 import Sidebar from "../../components/sidebar/Sidebar";
-import Feed1 from "../../components/feed/Feed1";
+import Feed1 from "../../components/feed/Feed";
 import Rightbar from "../../components/rightbar/Rightbar";
+
 
 export default function Profile() {
   return (

@@ -18,6 +18,7 @@ export default function Group({ data }) {
     <>
       <div className="post">
         <div className="postWrapper">
+          <div className="postCenter"></div>
           <img src={data.profilePicture} alt="" className="postImg" />
           <p
             style={{
@@ -35,6 +36,7 @@ export default function Group({ data }) {
             {joinRequestSent ? 'Request Sent' : 'Join Group'}
           </button>
         </div>
+        
       </div>
     </>
   );

@@ -8,7 +8,6 @@ export default function Aboutus() {
   return (
     <>
       <Topbar />
-      
       <div className="homeContainer">
       <Sidebar />
         <div className="aboutus">

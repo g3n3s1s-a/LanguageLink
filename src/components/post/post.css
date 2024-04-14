@@ -138,6 +138,7 @@
 
 .postCenter {
   margin: 20px 0;
+  margin-bottom: 1px;
   max-width: 600px;
   display: flex;
   flex-direction: column;
